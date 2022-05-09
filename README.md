@@ -7,3 +7,13 @@ React Router Dom V6
 ### Linting
 
 Contains ESLint and Prettier
+
+### CMS
+
+Using Sanity
+sanity start
+sanity deploy
+
+### Known Issue with Sanity and Vite TypeError url.parse is not a function
+
+npm install url
