@@ -1,0 +1,41 @@
+@import '../../global.scss';
+
+.hero-wrapper {
+  display: flex;
+  min-height: 400px;
+  background-color: $vivid-crimson;
+}
+
+.hero-container {
+  display: flex;
+  align-content: space-between;
+  max-width: 100%;
+
+  h1,
+  p {
+    color: $white;
+  }
+
+  .hero-text-container {
+    margin: auto;
+    width: 50%;
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 30px;
+      padding-right: 60px;
+    }
+  }
+
+  .hero-image-container {
+    width: 50%;
+
+    .hero-image {
+      width: 100%;
+      max-width: 600px;
+      padding: 5vh 0;
+    }
+  }
+}

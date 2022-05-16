@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "cms-template"
+    "name": "ventus-verba"
   },
   "api": {
-    "projectId": "qhzabyd2",
+    "projectId": "45dvb64f",
     "dataset": "production"
   },
   "plugins": [
