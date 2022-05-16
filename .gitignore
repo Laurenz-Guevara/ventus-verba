@@ -23,3 +23,5 @@ shotokan-sanity
 *.njsproj
 *.sln
 *.sw?
+*.env
+*.firebase
