@@ -43,8 +43,11 @@
   color: $charcoal-blue;
 }
 
-.search-box::-webkit-search-cancel-button {
-  display: none;
+.search-box::-webkit-search-decoration,
+.search-box::-webkit-search-cancel-button,
+.search-box::-webkit-search-results-button,
+.search-box::-webkit-search-results-decoration {
+  -webkit-appearance: none;
 }
 
 .clear-button {
