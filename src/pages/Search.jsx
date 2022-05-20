@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import sanityClient from '../client.jsx'
 import Breaker from '../components/Breaker'
 import Footer from '../components/Footer'
@@ -55,7 +55,7 @@ export default function Search() {
       </div>
       <div className="word-list" id="list">
         {postData &&
-          postData.map((card, index) => (
+          postData.map((card) => (
             <div key={card.word} className="card-content">
               <h1 className="card-word">{card.word}</h1>
               <h2>{card.definition}</h2>
