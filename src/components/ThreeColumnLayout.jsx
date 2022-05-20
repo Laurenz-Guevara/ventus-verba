@@ -15,7 +15,7 @@ export default function ThreeColumnLayout() {
         </div>
         <div className="column-container">
           <h1>3. Surpise</h1>
-          <p>Not sure what to look for? Suprise yourself!</p>
+          <p>Not sure what to look for? Surprise yourself!</p>
         </div>
       </div>
     </>

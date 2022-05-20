@@ -11,6 +11,9 @@ export default function Hero() {
         <div className="hero-container wrapper">
           <div className="hero-text-container">
             <h1>Ventus Verba</h1>
+            <div className="hero-image-container mobile">
+              <img src={VentusVerbaHero} className="hero-image"></img>
+            </div>
             <p>
               A repository for some fun, interesting and useful words you may
               come across in daily life or on the internet.
@@ -19,7 +22,7 @@ export default function Hero() {
               <Link to="/explore">Explore</Link>
             </button>
           </div>
-          <div className="hero-image-container">
+          <div className="hero-image-container desktop">
             <img src={VentusVerbaHero} className="hero-image"></img>
           </div>
         </div>

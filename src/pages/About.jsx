@@ -38,24 +38,24 @@ export default function About() {
 // export default function NavBar() {
 //   const [postData, setPost] = useState(null)
 
-//   useEffect(() => {
-//     sanityClient
-//       .fetch(
-//         `*[_type == "webpageimage"]{
-//           title,
-//           mainImage{
-//             asset->{
-//               _id,
-//               url
-//             },
-//             alt
+// useEffect(() => {
+//   sanityClient
+//     .fetch(
+//       `*[_type == "webpageimage"]{
+//         title,
+//         mainImage{
+//           asset->{
+//             _id,
+//             url
 //           },
-//           displayOrder
-//           }`
-//       )
-//       .then((data) => setPost(data))
-//       .catch(console.error)
-//   }, [])
+//           alt
+//         },
+//         displayOrder
+//         }`
+//     )
+//     .then((data) => setPost(data))
+//     .catch(console.error)
+// }, [])
 
 //   return (
 //     <>
@@ -69,7 +69,7 @@ export default function About() {
 //             <NavLink to={'/'}>Home</NavLink>
 //             <NavLink to={'/explore'}>Explore</NavLink>
 //             <NavLink to={'/search'}>Search</NavLink>
-//             <NavLink to={'/suprise'}>Suprise</NavLink>
+//             <NavLink to={'/surprise'}>Surprise</NavLink>
 //           </div>
 //         </div>
 //       </div>

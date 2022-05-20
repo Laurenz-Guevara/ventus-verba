@@ -17,3 +17,8 @@ sanity deploy
 ### Known Issue with Sanity and Vite TypeError url.parse is not a function
 
 npm install url
+
+### Sanity
+
+sanity login
+npm install @sanity/client

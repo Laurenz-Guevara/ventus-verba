@@ -9,7 +9,7 @@
 
 .column-container {
   max-width: 300px;
-
+  padding: 0 20px;
   h1 {
     padding-bottom: 15px;
   }
@@ -25,5 +25,27 @@
   p {
     font-weight: 300;
     font-size: 30px;
+  }
+}
+
+@media (max-width: $desktop-smaller-breakpoint) {
+  .column-container p {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: $tablet-breakpoint) {
+  .column-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .column-container {
+    text-align: center;
+    max-width: 500px;
+    padding-bottom: 30px;
+    p {
+      font-size: 26px;
+    }
   }
 }

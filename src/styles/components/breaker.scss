@@ -1,0 +1,17 @@
+@import '../../global.scss';
+
+.breaker-bar::before {
+  content: '';
+  background: $alabama-crimson;
+  display: block;
+  width: 100%;
+  height: 0.5rem;
+}
+
+.breaker-bar::after {
+  content: '';
+  background: $vivid-crimson;
+  display: block;
+  width: 100%;
+  height: 2.7rem;
+}
