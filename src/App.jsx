@@ -2,9 +2,10 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Home from './pages/Home'
-import About from './pages/About'
 import NavBar from './components/NavBar'
 import Search from './pages/Search'
+import Surprise from './pages/Surprise'
+import Explore from './pages/Explore'
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/explore" element={<Explore />} />
         <Route path="/search" element={<Search />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/surprise" element={<Surprise />} />
       </Routes>
     </Router>
   )

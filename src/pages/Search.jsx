@@ -5,11 +5,20 @@ import Footer from '../components/Footer'
 import '../styles/components/search.scss'
 
 export default function Search() {
-  const [postData, setPost] = useState(null)
+  const [data, setData] = useState(null)
+  const [words, setWords] = useState(null)
   const [inputValue, setInputValue] = useState('')
 
   const handleUserInput = (e) => {
     setInputValue(e.target.value)
+    setWords(
+      data.filter((item) => {
+        return (
+          item.word.toLowerCase().includes(e.target.value.toLowerCase()) ||
+          item.definition.toLowerCase().includes(e.target.value.toLowerCase())
+        )
+      })
+    )
   }
 
   useEffect(() => {
@@ -20,7 +29,7 @@ export default function Search() {
           definition,
           }`
       )
-      .then((data) => setPost(data))
+      .then((data) => (setData(data), setWords(data)))
       .catch(console.error)
   }, [])
 
@@ -54,8 +63,8 @@ export default function Search() {
         </button>
       </div>
       <div className="word-list" id="list">
-        {postData &&
-          postData.map((card) => (
+        {words &&
+          words.map((card) => (
             <div key={card.word} className="card-content">
               <h1 className="card-word">{card.word}</h1>
               <h2>{card.definition}</h2>
