@@ -57,7 +57,7 @@ export default function Search() {
           className="clear-button"
           id="clear"
           title="Clear text button"
-          onClick={() => setInputValue('')}
+          onClick={() => (setInputValue(''), setWords(data))}
         >
           Clear
         </button>

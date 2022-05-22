@@ -15,5 +15,14 @@ export default {
       description: 'Please add the definition of the word.',
       type: 'text',
     },
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'word',
+        maxLength: 96,
+      },
+    },
   ],
 }

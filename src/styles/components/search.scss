@@ -65,13 +65,13 @@
 .word-list {
   max-width: 800px;
   margin: auto;
-  padding: 15px;
+  padding: 15px 15px 90px 15px;
 }
 
 .card-content {
   display: flex;
   flex-wrap: nowrap;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   padding: 15px;
   margin-bottom: -1px;
@@ -86,9 +86,9 @@
   }
 
   h2 {
-    max-width: 400px;
+    max-width: 420px;
     height: 28px;
-    //margin-left: auto;
+    font-size: 1.3rem;
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis;
