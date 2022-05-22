@@ -6,6 +6,7 @@ import NavBar from './components/NavBar'
 import Search from './pages/Search'
 import Surprise from './pages/Surprise'
 import Explore from './pages/Explore'
+import Definition from './pages/Definition'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/explore" element={<Explore />} />
         <Route path="/search" element={<Search />} />
         <Route path="/surprise" element={<Surprise />} />
+        <Route path="/definition/:slug" element={<Definition />} />
       </Routes>
     </Router>
   )

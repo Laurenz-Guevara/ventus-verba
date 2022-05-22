@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
 import sanityClient from '../client.jsx'
 import Breaker from '../components/Breaker'
 import Footer from '../components/Footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons'
 import '../styles/components/search.scss'
 
 export default function Search() {
@@ -27,6 +30,7 @@ export default function Search() {
         `*[_type == "wordlist"]{
           word,
           definition,
+          slug,
           }`
       )
       .then((data) => (setData(data), setWords(data)))
@@ -65,9 +69,19 @@ export default function Search() {
       <div className="word-list" id="list">
         {words &&
           words.map((card) => (
-            <div key={card.word} className="card-content">
-              <h1 className="card-word">{card.word}</h1>
-              <h2>{card.definition}</h2>
+            <div key={card.word} className="card-wrapper">
+              <div className="card-content">
+                <h1 className="card-word">{card.word}</h1>
+                <h2>{card.definition}</h2>
+              </div>
+              <NavLink
+                to={'/definition/' + card.slug.current}
+                key={card.slug.current}
+                target="_blank"
+                className={'definition-icon'}
+              >
+                <FontAwesomeIcon icon={faCircleQuestion} />
+              </NavLink>
             </div>
           ))}
       </div>

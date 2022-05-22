@@ -68,17 +68,33 @@
   padding: 15px 15px 90px 15px;
 }
 
-.card-content {
+.card-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  align-items: baseline;
-  justify-content: space-between;
+  align-items: center;
   padding: 15px;
   margin-bottom: -1px;
   background-color: #fff;
   border: 1px solid #e1e4e7;
+}
+
+.definition-icon {
+  display: flex;
+  margin-left: auto;
+  padding: 5px;
+  font-size: 25px;
+  color: $charcoal-blue;
+  cursor: pointer;
+}
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
 
   h1 {
+    width: 100%;
     padding-right: 15px;
     font-size: 1.5rem;
     font-weight: bold;
@@ -86,7 +102,6 @@
   }
 
   h2 {
-    max-width: 420px;
     height: 28px;
     font-size: 1.3rem;
     text-align: left;
