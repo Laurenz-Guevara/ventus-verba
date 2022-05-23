@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import NavBar from './components/NavBar'
 import Search from './pages/Search'
-import Surprise from './pages/Surprise'
 import Explore from './pages/Explore'
 import Definition from './pages/Definition'
+import PageNotFound from './pages/PageNotFound'
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/search" element={<Search />} />
-        <Route path="/surprise" element={<Surprise />} />
         <Route path="/definition/:slug" element={<Definition />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Router>
   )

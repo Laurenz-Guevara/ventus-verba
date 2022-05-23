@@ -11,11 +11,11 @@ export default function ThreeColumnLayout() {
         </div>
         <div className="column-container">
           <h1>2. Search</h1>
-          <p>Search for a word or definition to look further.</p>
+          <p>Search for a word that has been added to the list.</p>
         </div>
         <div className="column-container">
-          <h1>3. Surpise</h1>
-          <p>Not sure what to look for? Surprise yourself!</p>
+          <h1>3. Definitions</h1>
+          <p>Click on the word to see it's full definition!</p>
         </div>
       </div>
     </>

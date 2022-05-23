@@ -30,9 +30,6 @@ export default function NavBar() {
             <li>
               <NavLink to={'/search'}>Search</NavLink>
             </li>
-            <li>
-              <NavLink to={'/surprise'}>Surprise</NavLink>
-            </li>
           </ul>
           <div className="menu-shadow" onClick={toggleMenu}></div>
           <div className="navbar-menu">

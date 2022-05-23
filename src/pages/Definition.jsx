@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import sanityClient from '../client.jsx'
 import Breaker from '../components/Breaker'
 import Footer from '../components/Footer'
+import Loading from '../components/Loading'
 import '../styles/components/definition.scss'
 import '../styles/components/button.scss'
 
@@ -23,7 +24,8 @@ export default function definition() {
       .catch(console.error)
   }, [slug])
 
-  if (!data) return <div>Loading...</div>
+  if (!data) return <Loading />
+
   return (
     <>
       <Breaker />

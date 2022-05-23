@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import sanityClient from '../client.jsx'
 import Breaker from '../components/Breaker'
 import Footer from '../components/Footer'
+import Loading from '../components/Loading'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons'
 import '../styles/components/search.scss'
@@ -11,6 +12,7 @@ export default function Search() {
   const [data, setData] = useState(null)
   const [words, setWords] = useState(null)
   const [inputValue, setInputValue] = useState('')
+  let [loading, setLoading] = useState(false)
 
   const handleUserInput = (e) => {
     setInputValue(e.target.value)
@@ -25,6 +27,7 @@ export default function Search() {
   }
 
   useEffect(() => {
+    setLoading(true)
     sanityClient
       .fetch(
         `*[_type == "wordlist"]{
@@ -33,9 +36,13 @@ export default function Search() {
           slug,
           }`
       )
-      .then((data) => (setData(data), setWords(data)))
+      .then((data) => (setData(data), setWords(data), setLoading(false)))
       .catch(console.error)
   }, [])
+
+  if (loading) {
+    return <Loading />
+  }
 
   return (
     <>

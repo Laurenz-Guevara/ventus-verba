@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import VentusVerbaHero from '../assets/ventus-verba-hero.png'
 import '../styles/components/hero.scss'
 import '../styles/components/button.scss'
@@ -19,7 +19,7 @@ export default function Hero() {
               come across in daily life or on the internet.
             </p>
             <button className="button">
-              <Link to="/explore">Explore</Link>
+              <NavLink to="/explore">Explore</NavLink>
             </button>
           </div>
           <div className="hero-image-container desktop">

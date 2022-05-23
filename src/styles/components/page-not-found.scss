@@ -1,0 +1,35 @@
+@import '../../global.scss';
+
+.page-not-found-container {
+  display: flex;
+  min-height: 550px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 20px 0 50px 0;
+  height: calc(100vh - 450px);
+
+  h1 {
+    flex-basis: 100%;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  h2 {
+    flex-basis: 100%;
+  }
+}
+
+.not-found-image-container {
+  width: 90%;
+  flex-basis: 100%;
+
+  .not-found-image {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 0;
+  }
+}
