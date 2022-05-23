@@ -77,7 +77,6 @@ export default function Search() {
               <NavLink
                 to={'/definition/' + card.slug.current}
                 key={card.slug.current}
-                target="_blank"
                 className={'definition-icon'}
               >
                 <FontAwesomeIcon icon={faCircleQuestion} />
