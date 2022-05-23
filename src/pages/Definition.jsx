@@ -34,7 +34,7 @@ export default function definition() {
           <h2>{data.word}</h2>
           <p>{data.definition}</p>
           <button className="button">
-            <Link to="/search">Return</Link>
+            <Link to="/search">Search</Link>
           </button>
         </div>
       </div>
