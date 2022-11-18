@@ -22,5 +22,3 @@ npm install url
 
 sanity login
 npm install @sanity/client
-
-test
