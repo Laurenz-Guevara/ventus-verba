@@ -1,48 +1,28 @@
-# react-vite-boilerplate
-
-Laurenz Guevara
-Node v16.15.0
-React Router Dom V6
-
-### Linting
-
-Contains ESLint and Prettier
-
-### Known Issue with Sanity and Vite TypeError url.parse is not a function
-
-npm install url
-
-### Sanity
-
-sanity login
-npm install @sanity/client
-
-### Link
-https://ventus-verba.web.app/
-
 <div id="top"></div>
 <div align="center">
-<h3 align="center">Laurenz Guevara Portfolio</h3>
+<h3 align="center">Ventus Verba</h3>
 
   <p align="center">
     Repository for interesting or useful words pulled in through a CMS called Sanity.
     <br />
     <br />
-    <a href="https://www.laurenzguevara.com/">View Live Site</a>
+    <a href="https://ventus-verba.web.app/">View Live Site</a>
     ·
-    <a href="https://github.com/Laurenz-Guevara/laurenz-guevara-portfolio-next-tailwind/issues">Report Bug</a>
+    <a href="https://github.com/Laurenz-Guevara/ventus-verba/issues">Report Bug</a>
   </p>
 </div>
 
 <!-- ABOUT THE PROJECT -->
-[![Product Name Screen Shot][product-screenshot]](https://ventus-verba.web.app/)
+ <a href="https://ventus-verba.web.app/">
+  <img src="https://user-images.githubusercontent.com/58118627/221487956-ade83eab-ea49-41f5-9423-4e2b3ca3ca35.png" width="100%"/>
+  </a>
 
 ## Additional Images
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/58118627/221336524-61583d3e-9a0b-48e9-b2bb-85535ebd3845.png" width="32%" /> 
-  <img src="https://user-images.githubusercontent.com/58118627/221335492-175726bb-d255-4201-b677-830033138dc1.png" width="32%" />
-  <img src="https://user-images.githubusercontent.com/58118627/221336634-64278ee8-2a25-4eda-a032-f83fa02d80e0.png" width="32%" />
+  <img src="https://user-images.githubusercontent.com/58118627/221488078-6e1fe6c7-751d-4365-b97a-3fca9d3283b6.png" width="32%" /> 
+  <img src="https://user-images.githubusercontent.com/58118627/221488123-39ae9613-1d27-454b-bd25-1ca421fa489b.png" width="32%" />
+  <img src="https://user-images.githubusercontent.com/58118627/221488161-44d8a968-393f-466e-9190-c713d79c87a9.png" width="32%" />
 </p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -130,5 +110,3 @@ Laurenz Guevara - laurenzguevara@outlook.com
 LinkedIn - https://www.linkedin.com/in/laurenzguevara/
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-[product-screenshot]: ./assets/preview/laurenz-guevara.png
